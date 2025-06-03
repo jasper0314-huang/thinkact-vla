@@ -4,37 +4,39 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning">
+  <meta property="og:title" content="ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning"/>
+  <meta property="og:description" content="ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning"/>
+  <meta property="og:url" content="https://jasper0314-huang.github.io/thinkact-vla/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning">
+  <meta name="twitter:description" content="ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="static/images/teaser.png">
+  <meta name="twitter:card" content="static/images/teaser.png">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Vision-Language-Action Models, Large Reasoning Models, Reinforcement Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="static/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ThinkAct" />
+  <link rel="manifest" href="static/favicon/site.webmanifest" />
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,6 +45,21 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FXRQXW9N3"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1FXRQXW9N3');
+  </script>
 </head>
 <body>
 
@@ -52,28 +69,76 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">
+              <img src="static/images/thinkact_logo.png" alt="Logo" style="height: 65px; vertical-align: middle; margin-right: -10px; position: relative; bottom: 18px;">
+              <span>ThinkAct:</span>
+              <!-- <span style="font-style: italic;">VideoMage:</span> -->
+              <br>
+              <span style="font-size: 2.5rem;">Vision-Language-Action Reasoning via Reinforced Visual Latent Planning</span>
+              <!-- <span style="font-size: 2.5rem; font-weight: normal;">Vision-Language-Action Reasoning via Reinforced Visual Latent Planning</span> -->
+            </h1>
+
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block" style="margin-right: 15px;">
+                <a href="https://jasper0314-huang.github.io/" target="_blank">Chi-Pin Huang</a>
+                <sup>1,2*</sup>
+              </span>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <span class="author-block" style="margin-right: 15px;">
+                <a href="https://kristery.github.io/" target="_blank">Yueh-Hua Wu</a>
+                <sup>1</sup>
+              </span>
+
+              <span class="author-block" style="margin-right: 15px;">
+                <a href="https://minhungchen.netlify.app/" target="_blank">Min-Hung Chen</a>
+                <sup>1</sup>
+              </span>
+
+              <!-- <br> -->
+              <span class="author-block" style="margin-right: 15px;">
+                <a href="https://vllab.ee.ntu.edu.tw/ycwang.html" target="_blank">Yu-Chiang Frank Wang</a>
+                <sup>1,2</sup>
+              </span>
+
+              <span class="author-block" style="margin-right: 15px;">
+                <a href="https://fuenyang1127.github.io/" target="_blank">Fu-En Yang</a>
+                <sup>1</sup>
+              </span>
+
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>
+                NVIDIA&nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>2</sup>
+                National Taiwan University
+                <br>
+                <span class="eql-cntrb">
+                  <sup>*</sup>Work done during internship
+                  <br>
+                </span>
+                <!-- <br> -->
+                <div class="columns is-centered" style="margin-top: 0.0rem; display: flex; align-items: center;">
+                  <div class="column is-narrow">
+                    <img src="static/images/nvidia_logo.png" alt="NVIDIA" style="height: 45px;">
                   </div>
+                  <div style="width: 1.3rem;"></div>
+                  <div class="column is-narrow">
+                    <img src="static/images/ntu_logo1.png" alt="NTU" style="height: 50px;">
+                  </div>
+                </div>
+                <!-- <br> -->
+                <!-- <sup style="color: rgba(171, 20, 20, 0.874); font-size: 1.8rem; font-weight: bold;">CVPR 2025</sup> -->
+              </span>
+            </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://jasper0314-huang.github.io/thinkact-vla/" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,7 +148,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,22 +156,22 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://jasper0314-huang.github.io/thinkact-vla/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (Coming soon!)</span>
                   </a>
                 </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://jasper0314-huang.github.io/thinkact-vla/" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -123,22 +188,19 @@
 </section>
 
 
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <img src="static/images/teaser.png" alt="ThinkAct-Teaser" class="center-image" style="max-width: 100%; height: auto; margin-bottom: 20px;" />
+      <h2 class="subtitle has-text-justified">
+        <p>
+          We introduce <b>ThinkAct</b>, a reasoning VLA framework capable of thinking before acting. Through reasoning reinforced by our <b>action-aligned visual feeedback</b>, ThinkAct enables capabilities of few-shot adaptation, long-horizon planning, and self-correction in embodied tasks.
+        </p>
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +210,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Vision-language-action (VLA) reasoning tasks require agents to interpret multimodal instructions, perform long-horizon planning, and act adaptively in dynamic environments. Existing approaches typically train VLA models in an end-to-end fashion, directly mapping inputs to actions without explicit reasoning, which hinders their ability to plan over multiple steps or adapt to complex task variations. In this paper, we propose ThinkAct, a dual-system framework that bridges high-level reasoning with low-level action execution via reinforced visual latent planning. ThinkAct trains a multimodal LLM to generate embodied reasoning plans guided by reinforcing action-aligned visual rewards based on goal completion and trajectory consistency. These reasoning plans are compressed into a visual plan latent that conditions a downstream action model for robust action execution on target environments. Extensive experiments on embodied reasoning and robot manipulation benchmarks demonstrate that ThinkAct enables few-shot adaptation, long-horizon planning, and self-correction behaviors in complex embodied AI tasks.
           </p>
         </div>
       </div>
@@ -158,120 +220,223 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Method -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3 has-text-centered">Method</h2>
+      <img src="static/images/method.png" alt="ThinkAct-Method" class="center-image" style="max-width: 100%; height: auto;" />
+      <p class="has-text-centered has-text-justified" style="font-size: 1.0rem; line-height: 1.3;">
+        Overview of ThinkAct. (a) Given observation \( o_t \) and instruction \( l \), ThinkAct advances action-aligned rewards derived from visual trajectory \( \tau \) to incentivize embodied reasoning capability of reasoning MLLM \( F_\theta \). (b) Conditioned on the visual plan latent \( c_t \), the DiT-based Action Model \( \pi_\phi \) learns to predict executable action while keeping \( F_\theta \) frozen. Note that, during inference, \( \pi_\phi \) and \( F_\theta \) could operate asynchronously to enable slow thinking and fast control for VLA reasoning tasks.
+      </p>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
+<section class="hero is-small">
+  <div class="hero-body has-text-centered">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <h2 class="title is-3 has-text-centered">Experiment Results</h2>
+
+      <h3 class="title is-4">Robot Manipulation Tasks</h3>
+      <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
+        <p class="has-text-centered has-text-justified">
+          Quantitative comparisons of robot manipulation tasks on SimplerEnv and LIBERO benchmarks. Bold denotes the best result.
+        </p>
+        <img src="static/images/robot_table.png" alt="ThinkAct-Robot-Table" class="center-image" style="width: 100%; height: auto; margin-top: 5px;" />
+      </div>
+
+      <h3 class="title is-4" style="margin-top: 20px;">Embodied Reasoning Tasks</h3>
+      <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
+        <p class="has-text-centered has-text-justified">
+          Quantitative comparisons of embodied reasoning tasks on EgoPlan-Bench2, RoboVQA, and OpenEQA benchmarks. Note that, Qwen2.5-VL* indicates fine-tuning the original Qwen2.5-VL using EgoPlan-IT and RoboVQA datasets. Bold denotes the best result.
+        </p>
+        <img src="static/images/qa_table.png" alt="ThinkAct-QA-Table" class="center-image" style="max-width: 100%; height: auto; margin-top: 5px;" />
+      </div>
+
+      <h3 class="title is-4" style="margin-top: 20px;">Few-shot Adaptation</h3>
+      <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
+        <p class="has-text-centered has-text-justified">
+          Few-shot adaptation results on LIBERO. We use 5 and 10 demonstrations per task for fine-tuning.
+        </p>
+        <img src="static/images/few_shot.png" alt="ThinkAct-Few-shot" class="center-image" style="max-width: 100%; height: auto; margin-top: 5px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body has-text-centered">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Visualization</h2>
+
+        <h3 class="title is-4">Diverse Scene and Long-horizon Robot Manipulation Tasks</h3>
+        <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
+          <div class="item item-manipulation_1">
+            <video poster="" id="manipulation_1" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+              <!-- Your video file here -->
+              <source src="static/videos/manipulation_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-manipulation_2">
+            <video poster="" id="manipulation_2" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+              <!-- Your video file here -->
+              <source src="static/videos/manipulation_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-manipulation_3">
+            <video poster="" id="manipulation_3" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+              <!-- Your video file here -->
+              <source src="static/videos/manipulation_3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4">Reflection & Self-correction</h3>
+
+        <h3 class="title is-4">Qualitative Comparisons</h3>
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <video autoplay controls muted loop playsinline width="100%">
+              <source src="static/videos/comparison_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width: 2.5rem;"></div>
+          <div class="column is-one-third has-text-centered">
+            <video autoplay controls muted loop playsinline width="100%">
+              <source src="static/videos/comparison_2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      
+        <div class="columns is-centered" style="margin-top: -30px;">
+          <div class="column is-one-third has-text-centered">
+            <video autoplay controls muted loop playsinline width="100%">
+              <source src="static/videos/comparison_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width: 2.5rem;"></div>
+          <div class="column is-one-third has-text-centered">
+            <video autoplay controls muted loop playsinline width="100%">
+              <source src="static/videos/comparison_4.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="columns is-centered" style="margin-top: -30px;">
+          <div class="column is-one-third has-text-centered">
+            <video autoplay controls muted loop playsinline width="100%">
+              <source src="static/videos/comparison_5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width: 2.5rem;"></div>
+          <div class="column is-one-third has-text-centered">
+            <video autoplay controls muted loop playsinline width="100%">
+              <source src="static/videos/comparison_6.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4">Embodied Reasoning</h3>
+        <div class="container has-text-centered">
+          <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
+            
+            <!-- Slide 1 -->
+            <div class="columns is-vcentered is-centered">
+              <!-- Left column: Video + QA -->
+              <div class="column is-5">
+                <video autoplay controls muted loop playsinline width="70%">
+                  <source src="static/videos/qa_1.mp4" type="video/mp4">
+                </video>
+                <div class="content mt-4 has-text-justified">
+                  <p><strong>Question:</strong> Considering the progress shown in the video and the observation in the final frame, what should be the next action to complete the task: "prepare baking powder"<br>
+                    A. close box<br>
+                    B. remove baking powder sachet<br>
+                    C. pour baking powder into basin<br>
+                    D. put salt on table
+                  </p>
+                  <p><strong>Answer:</strong> C. pour baking powder into basin</p>
+                </div>
+              </div>
+        
+              <!-- Right column: Reasoning -->
+              <div class="column is-5 has-text-justified">
+                <div class="box content">
+                  <p>&lt;think&gt;</p>
+                  <p>Let me think about this carefully. The person is preparing something in a green bowl. They have already added salt, and now they are dealing with a yellow packet labeled "Mandazi." The action seems to be related to preparing a mixture, possibly for baking.</p>
+        
+                  <p>Hmm, the person is opening the yellow packet and seems to be taking something out. Wait, is it a baking powder? It looks like they are pouring something from the packet into the bowl.</p>
+        
+                  <p>Oh, I see. The person is likely preparing a mixture that requires baking powder. Let's break it down: they have salt and now they are adding something from the packet. It must be the baking powder.</p>
+        
+                  <p>Therefore, the next action should be to pour the baking powder into the basin. This aligns with the process of preparing baking powder as part of the recipe.</p>
+                  <p>&lt;/think&gt;</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div class="columns is-vcentered is-centered">
+              <!-- Left column -->
+              <div class="column is-5">
+                <video autoplay controls muted loop playsinline width="70%">
+                  <source src="static/videos/qa_2.mp4" type="video/mp4">
+                </video>
+                <div class="content mt-4 has-text-justified">
+                  <p><strong>Question:</strong> What shape is the carpet on the floor?
+                  </p>
+                  <p><strong>Answer:</strong> Rectangular</p>
+                </div>
+              </div>
+        
+              <!-- Right column -->
+              <div class="column is-5 has-text-justified">
+                <div class="box content">
+                  <p>&lt;think&gt;</p>
+                  <p>Let me think about this for a moment. The image shows a room with a carpet on the floor. I’m trying to figure out its shape.</p>
+
+                  <p>At first glance, the floral pattern in the center draws attention, which might make the shape seem more complex. But looking closely at the edges, they are straight and meet at right angles. The corners are clearly defined, and the sides are parallel.</p>
+
+                  <p>So, despite the decorative design, the overall outline of the carpet is rectangular. That seems clear now.</p>
+                  <p>&lt;/think&gt;</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="columns is-vcentered is-centered">
+              <!-- Left column -->
+              <div class="column is-5">
+                <video autoplay controls muted loop playsinline width="70%">
+                  <source src="static/videos/qa_3.mp4" type="video/mp4">
+                </video>
+                <div class="content mt-4 has-text-justified">
+                  <p><strong>Question:</strong> Move the paper to left. Is it possible right now?</p>
+                  <p><strong>Answer:</strong> yes</p>
+                </div>
+              </div>
+        
+              <!-- Right column -->
+              <div class="column is-5 has-text-justified">
+                <div class="box content">
+                  <p>&lt;think&gt;</p>
+                  <p></p>Let me think about this for a moment. The image shows a desk with various items on it, and a robotic arm is currently holding a piece of paper above the desk.</p>
+
+                  <p>The question is whether the paper can be moved to the left right now. Since the paper is already lifted off the surface, the arm has full control of its movement.</p>
+
+                  <p>Given that, there's nothing preventing it from being moved left. So yes, it's possible.</p>
+                  <p>&lt;/think&gt;</p>
+                </div>
+              </div>
+            </div>
+        
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
