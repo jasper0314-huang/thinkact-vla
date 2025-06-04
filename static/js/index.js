@@ -20,7 +20,7 @@ $(document).ready(function() {
 	  loop: true,
 	  infinite: true,
 	  autoplay: true,
-	  autoplaySpeed: 23000,
+	  autoplaySpeed: 20000,
 	};
 	var manipulationCarousel = bulmaCarousel.attach('#manipulation-carousel', manipulationOptions);
 
