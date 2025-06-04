@@ -2,20 +2,27 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 
 $(document).ready(function() {
-    // Check for click events on the navbar burger icon
+	// Default carousel
+	var defaultOptions = {
+	  slidesToScroll: 1,
+	  slidesToShow: 1,
+	  loop: true,
+	  infinite: true,
+	  autoplay: true,
+	  autoplaySpeed: 5000,
+	};
+	var carousels = bulmaCarousel.attach('.carousel:not(#manipulation-carousel)', defaultOptions);
 
-    var options = {
-			slidesToScroll: 1,
-			slidesToShow: 1,
-			loop: true,
-			infinite: true,
-			autoplay: true,
-			autoplaySpeed: 5000,
-    }
+	// Qualitative Results carousel
+	var manipulationOptions = {
+	  slidesToScroll: 1,
+	  slidesToShow: 1,
+	  loop: true,
+	  infinite: true,
+	  autoplay: true,
+	  autoplaySpeed: 23000,
+	};
+	var manipulationCarousel = bulmaCarousel.attach('#manipulation-carousel', manipulationOptions);
 
-		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
-	
-    bulmaSlider.attach();
-
-})
+	bulmaSlider.attach();
+  });

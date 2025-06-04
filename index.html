@@ -273,7 +273,7 @@
       <h2 class="title is-3 has-text-centered">Visualization</h2>
 
         <h3 class="title is-4">Diverse Scene and Long-horizon Robot Manipulation Tasks</h3>
-        <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
+        <div id="manipulation-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
           <div class="item item-manipulation_1">
             <video poster="" id="manipulation_1" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
               <!-- Your video file here -->
@@ -294,9 +294,29 @@
           </div>
         </div>
 
-        <h3 class="title is-4">Reflection & Self-correction</h3>
+        <h3 class="title is-4" style="margin-top: 40px;">Reflection & Self-correction</h3>
+        <div id="manipulation-carousel" class="carousel results-carousel" style="margin-bottom: 20px; margin-top: -40px;">
+          <div class="item item-reflection_1">
+            <video poster="" id="reflection_1" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+              <!-- Your video file here -->
+              <source src="static/videos/reflection_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-reflection_2">
+            <video poster="" id="reflection_2" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+              <!-- Your video file here -->
+              <source src="static/videos/reflection_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-reflection_3">
+            <video poster="" id="reflection_3" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+              <!-- Your video file here -->
+              <source src="static/videos/reflection_3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
 
-        <h3 class="title is-4">Qualitative Comparisons</h3>
+        <h3 class="title is-4" style="margin-top: 40px;">Qualitative Comparisons</h3>
         <div class="columns is-centered">
           <div class="column is-one-third has-text-centered">
             <video autoplay controls muted loop playsinline width="100%">
@@ -339,15 +359,15 @@
           </div>
         </div>
 
-        <h3 class="title is-4">Embodied Reasoning</h3>
+        <h3 class="title is-4" style="margin-top: 40px;">Embodied Reasoning</h3>
         <div class="container has-text-centered">
           <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
             
             <!-- Slide 1 -->
             <div class="columns is-vcentered is-centered">
               <!-- Left column: Video + QA -->
-              <div class="column is-5">
-                <video autoplay controls muted loop playsinline width="70%">
+              <div class="column is-4">
+                <video autoplay controls muted loop playsinline width="80%">
                   <source src="static/videos/qa_1.mp4" type="video/mp4">
                 </video>
                 <div class="content mt-4 has-text-justified">
@@ -364,15 +384,16 @@
               <!-- Right column: Reasoning -->
               <div class="column is-5 has-text-justified">
                 <div class="box content">
-                  <p>&lt;think&gt;</p>
-                  <p>Let me think about this carefully. The person is preparing something in a green bowl. They have already added salt, and now they are dealing with a yellow packet labeled "Mandazi." The action seems to be related to preparing a mixture, possibly for baking.</p>
+                  <p>&lt;think&gt;<br>
+                  Let me think about this carefully. The person is preparing something in a green bowl. <span style="color: #76b900;">They have already added salt, and now they are dealing with a yellow packet labeled "Mandazi."</span> The action seems to be related to preparing a mixture, possibly for baking.</p>
         
                   <p>Hmm, the person is opening the yellow packet and seems to be taking something out. Wait, is it a baking powder? It looks like they are pouring something from the packet into the bowl.</p>
         
-                  <p>Oh, I see. The person is likely preparing a mixture that requires baking powder. Let's break it down: they have salt and now they are adding something from the packet. It must be the baking powder.</p>
+                  <p>Oh, I see. The person is likely preparing a mixture that requires baking powder. Let's break it down: <span style="color: #76b900;">they have salt and now they are adding something from the packet. It must be the baking powder.</span></p>
         
-                  <p>Therefore, the next action should be to pour the baking powder into the basin. This aligns with the process of preparing baking powder as part of the recipe.</p>
-                  <p>&lt;/think&gt;</p>
+                  <p>Therefore, the next action should be to <span style="color: #76b900;">pour the baking powder into the basin</span>. This aligns with the process of preparing baking powder as part of the recipe.<br>
+                  &lt;/think&gt;<br>
+                  &lt;answer&gt;<strong><span style="color: #76b900;">C</span></strong>&lt;/answer&gt;</p>
                 </div>
               </div>
             </div>
@@ -380,8 +401,8 @@
             <!-- Slide 2 -->
             <div class="columns is-vcentered is-centered">
               <!-- Left column -->
-              <div class="column is-5">
-                <video autoplay controls muted loop playsinline width="70%">
+              <div class="column is-4">
+                <video autoplay controls muted loop playsinline width="80%">
                   <source src="static/videos/qa_2.mp4" type="video/mp4">
                 </video>
                 <div class="content mt-4 has-text-justified">
@@ -394,13 +415,14 @@
               <!-- Right column -->
               <div class="column is-5 has-text-justified">
                 <div class="box content">
-                  <p>&lt;think&gt;</p>
-                  <p>Let me think about this for a moment. The image shows a room with a carpet on the floor. I’m trying to figure out its shape.</p>
+                  <p>&lt;think&gt;<br>
+                  Let me think about this for a moment. The image shows a room with a carpet on the floor. I'm trying to figure out its shape.</p>
 
-                  <p>At first glance, the floral pattern in the center draws attention, which might make the shape seem more complex. But looking closely at the edges, they are straight and meet at right angles. The corners are clearly defined, and the sides are parallel.</p>
+                  <p>At first glance, the floral pattern in the center draws attention, which might make the shape seem more complex. But looking closely at the edges, <span style="color: #76b900;">they are straight and meet at right angles</span>. The corners are clearly defined, and <span style="color: #76b900;">the sides are parallel.</span></p>
 
-                  <p>So, despite the decorative design, the overall outline of the carpet is rectangular. That seems clear now.</p>
-                  <p>&lt;/think&gt;</p>
+                  <p>So, despite the decorative design, <span style="color: #76b900;">the overall outline of the carpet is rectangular</span>. That seems clear now.<br>
+                  &lt;/think&gt;<br>
+                  &lt;answer&gt;<strong><span style="color: #76b900;">The carpet on the floor is rectangular.</span></strong>&lt;/answer&gt;</p>
                 </div>
               </div>
             </div>
@@ -408,8 +430,8 @@
             <!-- Slide 3 -->
             <div class="columns is-vcentered is-centered">
               <!-- Left column -->
-              <div class="column is-5">
-                <video autoplay controls muted loop playsinline width="70%">
+              <div class="column is-4">
+                <video autoplay controls muted loop playsinline width="80%">
                   <source src="static/videos/qa_3.mp4" type="video/mp4">
                 </video>
                 <div class="content mt-4 has-text-justified">
@@ -421,13 +443,20 @@
               <!-- Right column -->
               <div class="column is-5 has-text-justified">
                 <div class="box content">
-                  <p>&lt;think&gt;</p>
-                  <p></p>Let me think about this for a moment. The image shows a desk with various items on it, and a robotic arm is currently holding a piece of paper above the desk.</p>
+                  <p>
+                    &lt;think&gt;<br>
+                    Let me think about this for a moment. The image shows a desk with various items on it, and a robotic arm is currently holding a piece of paper above the desk.
+                  </p>
 
-                  <p>The question is whether the paper can be moved to the left right now. Since the paper is already lifted off the surface, the arm has full control of its movement.</p>
+                  <p>
+                    The question is whether the paper can be moved to the left right now. <span style="color: #76b900;">Since the paper is already lifted off the surface, the arm has full control of its movement.</span>
+                  </p>
 
-                  <p>Given that, there's nothing preventing it from being moved left. So yes, it's possible.</p>
-                  <p>&lt;/think&gt;</p>
+                  <p>
+                    Given that, <span style="color: #76b900;">there's nothing preventing it from being moved left</span>. So yes, it's possible.<br>
+                    &lt;/think&gt;<br>
+                    &lt;answer&gt;<strong><span style="color: #76b900;">yes</span></strong>&lt;/answer&gt;
+                  </p>
                 </div>
               </div>
             </div>
